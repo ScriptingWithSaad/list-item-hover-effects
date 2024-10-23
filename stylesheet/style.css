@@ -1,0 +1,138 @@
+/* Google Font Poppins import Link*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Google Font Poppins */
+    --font1: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+}
+
+.continer {
+    width: 300px;
+    height: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, .6);
+}
+
+.bx1 {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: #5268e5;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bx1::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: none;
+    border-radius: 50%;
+    border: 40px solid rgb(255, 255, 255, .1);
+    left: 3%;
+    top: -30px;
+}
+
+.bx1::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: none;
+    border-radius: 50%;
+    border: 10px solid rgb(255, 255, 255, .1);
+    left: 2%;
+    top: -30px;
+}
+
+.bx1 .icon {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bx1 .icon .bi {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 8px;
+}
+
+.bx1 .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-family: var(--font1);
+}
+
+.bx1 .text span {
+    letter-spacing: 2px;
+    font-size: 9px;
+}
+
+.bx2 {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.bx2 .card {
+    width: 95%;
+    height: 17%;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0, .6);
+    border-radius: 10px;
+    background: #fff;
+    color: gray;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font1);
+}
+
+.bx2 .card:hover {
+    width: 105%;
+    height: 25%;
+}
+
+.bx2 .card img {
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.bx2 .card .cur {
+    color: #85bb65;
+    margin-right: 20px;
+}
